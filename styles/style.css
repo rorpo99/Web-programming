@@ -3,13 +3,31 @@ header {
     align-items: center;
     border: 2px solid black;
     background-color: #EEF0EF;
+    flex: 0 0 auto;
 }
 
-ul.navigation_bar {
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+ul {
     list-style-type: none;
+    padding: 10px;
 }
 
-ul.navigation_bar li {
+nav ul li {
     display: inline;
     text-transform: uppercase;
     text-decoration: none;
@@ -17,9 +35,9 @@ ul.navigation_bar li {
     color: #35475B;
 }
 
-ul {
-    list-style-type: none;
-    padding: 10px;
+footer ul li {
+    display: inline;
+    padding: 20px;
 }
 
 aside.menu {
@@ -37,19 +55,16 @@ blockquote {
     width: 300px;
     float: right;
 }
+
 footer {
     border: 2px solid black;
-    position: fixed;
     bottom:0;
     left:0;
     width:100%;
     height: 90px;
     background-color: #B2E5FA;
-    flex-shrink: 0;
     display: flex;
-    flex-wrap: nowrap;
-}
-
-main {
-    display: flex;
+    flex: 0 0 auto;
+    margin: 0;
+    justify-content: center;
 }
