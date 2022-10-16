@@ -7,35 +7,38 @@
     <meta name="keywords" content="дневник, журнал, врачебный, учёт, пацинетов">
     <title>Дневник пациентов</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrapper">
-    <header>
-        <img src="images/logo.png" alt="logotype">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a>
+    <header class="main-page">
+        <img src="images/logo.png" alt="logotype" class="logo">
+        <nav class="main-page">
+            <ul class="header-nav-main-page">
+                <li class="header_nav_item">
+                    <a href="index.html" class="header_formatted">Главная</a>
                 </li>
-                <li>
-                    <a href="index.html">Расписание</a>
+                <li class="header_nav_item">
+                    <a href="index.html" class="header_formatted">Расписание</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class>
         <aside class="menu">
-            <ul>
+            <ul class="aside-menu-formatted">
                 <li>
-                    <a href="index.html">Истории болезни</a>
+                    <a href="index.html" class="aside-menu-formatted">Истории болезни</a>
                 </li>
                 <li>
-                    <a href="index.html">Список пациентов</a>
+                    <a href="index.html" class="aside-menu-formatted">Список пациентов</a>
                 </li>
             </ul>
         </aside>
-        <div id="main_content">
+        <div class="main-content">
             <article>
                 <section>
                     <p>
@@ -57,12 +60,12 @@
                     <p>
                     <h4>Истории болезни</h4>
                     Для каждого пациента вы можете заводить историю болезни.
-                    Для того чтобы не деражть всю информацию в голове, ведите краткие истории болезни для каждого пациента.
+                    <span id="example">Для того чтобы не деражть всю информацию в голове, </span> ведите краткие истории болезни для каждого пациента.
                     Здесь вы сами сможете добавлять нужные вам поля. <br>
                     </p>
                 </section>
 
-                <blockquote>
+                <blockquote class="right-sided">
                     "Будущее принадлежит медицине предохранительной. Эта наука, идя рука об руку с лечебной, принесет несомненную пользу человечеству."
                     <br>
                     <cite> Николай Иванович Пирогов </cite>
@@ -70,18 +73,18 @@
             </article>
         </div>
     </main>
-    <footer>
+    <footer class="bottom-page">
         <ul>
-            <li>
+            <li class="footer-item">
                 <span>Контактная информация: </span>
             </li>
-            <li>
-                <a href="https://t.me/rorpo99">Telegram</a>
+            <li class="footer-item">
+                <a href="https://t.me/rorpo99" class="footer-formatted">Telegram</a>
             </li>
-            <li>
-                <a href="https://vk.com/rorpo99">ВКонтакте</a>
+            <li class="footer-item">
+                <a href="https://vk.com/rorpo99" class="footer-formatted">ВКонтакте</a>
             </li>
-            <li>
+            <li class="footer-item">
                 sonia.vyatkina2@yandex.ru
             </li>
         </ul>
