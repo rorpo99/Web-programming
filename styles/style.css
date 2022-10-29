@@ -21,6 +21,16 @@ main {
     height: 100%;
 }
 
+/*remove after lab-2*/
+.main-content p {
+    text-indent: 30px;
+}
+
+#aligned-text {
+    text-align: center;
+}
+
+
 a.header_formatted{
     color: #35475B;
     text-decoration: none;
@@ -43,6 +53,7 @@ a.aside-menu-formatted{
     line-height: 36px;
     font-size: medium;
     font-weight: 600;
+    font-style: italic;
 }
 
 a:hover {
