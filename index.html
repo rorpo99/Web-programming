@@ -7,115 +7,84 @@
     <meta name="keywords" content="дневник, журнал, врачебный, учёт, пацинетов">
     <title>Дневник пациентов</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrapper">
-    <header>
-        <img src="images/logo.png" alt="logotype">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Главная</a>
+    <header class="main-page">
+        <img src="images/logo.png" alt="logotype" class="logo">
+        <nav class="main-page">
+            <ul class="header-nav-main-page">
+                <li class="header_nav_item">
+                    <a href="index.html" class="header_formatted">Главная</a>
                 </li>
-                <li>
-                    <a href="index.html">Расписание</a>
+                <li class="header_nav_item">
+                    <a href="index.html" class="header_formatted">Расписание</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class>
         <aside class="menu">
-            <ul>
+            <ul class="aside-menu-formatted">
                 <li>
-                    <a href="index.html">Истории болезни</a>
+                    <a href="index.html" class="aside-menu-formatted">Истории болезни</a>
                 </li>
                 <li>
-                    <a href="index.html">Список пациентов</a>
+                    <a href="index.html" class="aside-menu-formatted">Список пациентов</a>
                 </li>
             </ul>
         </aside>
-        <div id="main_content">
+        <div class="main-content">
             <article>
                 <section>
-                    <p>
                     <h2> Дневник для доктора</h2>
-                    Если вам нужен интсрумент для более удобной организации <strong>частной практики </strong> ,
+                    <p>
+                    Если вам нужен инструмент для более удобной организации <strong>частной практики </strong> ,
                     то дневник учёта пациентов - нужное решение.
                     </p>
                 </section>
 
                 <section>
-                    <p>
                     <h4>Расписание</h4>
+                    <p>
                     Добаляйте приёмы пациентов в расписание.
-                    Его визуализация поможет <del>не забыть</del> <ins>равномерно распределить нагрузку в течение недели.</ins>
+                    Его визуализация поможет равномерно распределить нагрузку в течение недели.
                     </p>
                 </section>
 
                 <section>
-                    <p>
                     <h4>Истории болезни</h4>
+                    <p id="aligned-text">
                     Для каждого пациента вы можете заводить историю болезни.
-                    Для того чтобы не деражть всю информацию в голове, ведите краткие истории болезни для каждого пациента.
-                    Здесь вы сами <em>сможете добалять нужные вам поля.</em> <br>
+                    <span id="example">Для того чтобы не деражть всю информацию в голове, </span> ведите краткие истории болезни для каждого пациента.
+                    Здесь вы сами сможете добавлять нужные вам поля. <br>
                     </p>
                 </section>
 
-                <blockquote>
+                <blockquote class="right-sided">
                     "Будущее принадлежит медицине предохранительной. Эта наука, идя рука об руку с лечебной, принесет несомненную пользу человечеству."
                     <br>
                     <cite> Николай Иванович Пирогов </cite>
                 </blockquote>
-
-                <section>
-                    <p>
-                        H<sub>2</sub>O<sub>2</sub> - пероксид водорода, а формулы успеха нет &#9786;
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        ASCII-арт
-                    </p>
-                    <pre>
-                        ╭━╮┈╭━╮┈┈┈┈┈╭━╮
-                        ┃╭╯┈┃┊┗━━━━━┛┊┃
-                        ┃╰┳┳┫┏━▅╮┊╭━▅┓┃
-                        ┃┫┫┫┫┃┊▉┃┊┃┊▉┃┃
-                        ┃┫┫┫╋╰━━┛▅┗━━╯╋
-                        ┃┫┫┫╋┊┊┊┣┻┫┊┊┊╋
-                        ┃┊┊┊╰┈┈┈┈┈┈┈┳━╯
-                        ┃┣┳┳━━┫┣━━┳╭╯
-                    </pre>
-                </section>
-
-                <section>
-                    <p>
-                        Франмент кода
-                    </p>
-                    <code>
-                        public int MyProperty { get; set; }
-                    </code>
-                </section>
-
             </article>
         </div>
     </main>
-    <footer>
+    <footer class="bottom-page">
         <ul>
-            <li>
+            <li class="footer-item">
                 <span>Контактная информация: </span>
             </li>
-            <li>
-                <a href="https://t.me/rorpo99">Telegram</a>
+            <li class="footer-item">
+                <a href="https://t.me/rorpo99" class="footer-formatted" target="_blank">Telegram</a>
             </li>
-            <li>
-                <a href="https://vk.com/rorpo99">ВКонтакте</a>
+            <li class="footer-item">
+                <a href="https://vk.com/rorpo99" class="footer-formatted" target="_blank">ВКонтакте</a>
             </li>
-            <li>
+            <li class="footer-item">
                 sonia.vyatkina2@yandex.ru
             </li>
         </ul>
