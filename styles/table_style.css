@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    border: 0px;
+    border: 0;
     border-collapse: collapse;
     font-family: 'Jost', sans-serif;
 }
@@ -21,7 +21,7 @@ table thead {
 }
 
 table td {
-    padding: 0.6rem 1rem;
+    padding: 10px;
     border-bottom: 1px solid #e8e9eb;
     text-align: center;
 }
