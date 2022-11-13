@@ -53,7 +53,7 @@ a:hover {
 
 aside.menu {
     padding: 10px;
-    padding-left: 0px;
+    padding-left: 0;
     width: 174px;
     float: left;
     margin: 10px;
@@ -116,28 +116,14 @@ nav.main-page {
 ul.aside-menu-formatted {
     list-style-type: none;
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #DDEBFB;
     border-radius: 10px;
 }
 
 ul.header-nav-main-page {
     margin: 30px 10px;
-    padding: 0px;
-}
-
-/*remove after lab-3*/
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 200px;
-    align-content: space-around;
-    align-items: stretch;
-}
-
-.box-item {
-    margin: 20px 40px;
+    padding: 0;
 }
 
 .dropbtn {
