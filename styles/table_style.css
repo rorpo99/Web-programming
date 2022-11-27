@@ -1,0 +1,65 @@
+table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    font-family: 'Jost', sans-serif;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex: 1 0 auto;
+}
+caption {
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+table thead {
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #e8e9eb;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #DDEBFB;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+
+    .container table thead {
+        display: none;
+    }
+
+    .container table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .container table td {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 20px;
+    }
+}

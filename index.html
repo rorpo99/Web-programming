@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="дневник, журнал, врачебный, учёт, пацинетов">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Дневник пациентов</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 
@@ -16,6 +15,21 @@
 <div class="wrapper">
     <header class="main-page">
         <img src="images/logo.png" alt="logotype" class="logo">
+        <div class="dropdown">
+            <button class="dropbtn">Меню</button>
+            <div class="dropdown-content">
+                <a href="index.html" class="header_formatted">Главная</a>
+                <a href="index.html" class="header_formatted">Расписание</a>
+                <a href="index.html" class="header_formatted">Запись</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Пациенты</button>
+            <div class="dropdown-content">
+                <a href="index.html" class="header_formatted">Истории болезни</a>
+                <a href="patient_list.html" class="header_formatted">Список пациентов</a>
+            </div>
+        </div>
         <nav class="main-page">
             <ul class="header-nav-main-page">
                 <li class="header_nav_item">
@@ -24,17 +38,20 @@
                 <li class="header_nav_item">
                     <a href="index.html" class="header_formatted">Расписание</a>
                 </li>
+                <li class="header_nav_item">
+                    <a href="index.html" class="header_formatted">Запись</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class>
+    <main>
         <aside class="menu">
             <ul class="aside-menu-formatted">
                 <li>
                     <a href="index.html" class="aside-menu-formatted">Истории болезни</a>
                 </li>
                 <li>
-                    <a href="index.html" class="aside-menu-formatted">Список пациентов</a>
+                    <a href="patient_list.html" class="aside-menu-formatted">Список пациентов</a>
                 </li>
             </ul>
         </aside>
@@ -60,17 +77,21 @@
                     <h4>Истории болезни</h4>
                     <p id="aligned-text">
                     Для каждого пациента вы можете заводить историю болезни.
-                    <span id="example">Для того чтобы не деражть всю информацию в голове, </span> ведите краткие истории болезни для каждого пациента.
+                    Для того чтобы не деражть всю информацию в голове, ведите краткие истории болезни для каждого пациента.
                     Здесь вы сами сможете добавлять нужные вам поля. <br>
                     </p>
                 </section>
-
-                <blockquote class="right-sided">
-                    "Будущее принадлежит медицине предохранительной. Эта наука, идя рука об руку с лечебной, принесет несомненную пользу человечеству."
-                    <br>
-                    <cite> Николай Иванович Пирогов </cite>
-                </blockquote>
             </article>
+            <div class="box">
+                <div class="box-item">One</div>
+                <div class="box-item">Two</div>
+                <div class="box-item">Three</div>
+                <div class="box-item">Four</div>
+                <div class="box-item">Five</div>
+                <div class="box-item">Six</div>
+                <div class="box-item">Seven</div>
+                <div class="box-item">Eight</div>
+            </div>
         </div>
     </main>
     <footer class="bottom-page">
