@@ -55,7 +55,6 @@ a.aside-menu-formatted{
     line-height: 36px;
     font-size: medium;
     font-weight: 600;
-    font-style: italic;
 }
 
 a:hover {
@@ -151,6 +150,10 @@ ul.aside-menu-formatted {
 ul.header-nav-main-page {
     margin: 30px 10px;
     padding: 0;
+}
+
+.white-theme {
+    color: #ffffff;
 }
 
 .dropbtn {
