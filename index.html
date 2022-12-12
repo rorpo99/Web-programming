@@ -9,25 +9,28 @@
     <title>Дневник пациентов</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="scripts/change_text_color.js"></script>
+    <script src="scripts/page_load_time.js"></script>
+    <script src="scripts/highlight_current_location.js"></script>
 </head>
 
-<body>
+<body class="bodyContent">
 <div class="wrapper">
     <header class="main-page">
-        <img src="images/logo.png" alt="logotype" class="logo">
+        <img id="img" src="images/logo.png" alt="logotype" class="logo">
         <div class="dropdown">
             <button class="dropbtn">Меню</button>
             <div class="dropdown-content">
                 <a href="index.html" class="header_formatted">Главная</a>
-                <a href="index.html" class="header_formatted">Расписание</a>
-                <a href="index.html" class="header_formatted">Запись</a>
+                <a href="pages/schedule.html" class="header_formatted">Расписание</a>
+                <a href="pages/make_an_appointment.html" class="header_formatted">Запись</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Пациенты</button>
             <div class="dropdown-content">
-                <a href="index.html" class="header_formatted">Истории болезни</a>
-                <a href="patient_list.html" class="header_formatted">Список пациентов</a>
+                <a href="pages/anamnez.html" class="header_formatted">Истории болезни</a>
+                <a href="pages/patient_list.html" class="header_formatted">Список пациентов</a>
             </div>
         </div>
         <nav class="main-page">
@@ -36,10 +39,10 @@
                     <a href="index.html" class="header_formatted">Главная</a>
                 </li>
                 <li class="header_nav_item">
-                    <a href="index.html" class="header_formatted">Расписание</a>
+                    <a href="pages/schedule.html" class="header_formatted">Расписание</a>
                 </li>
                 <li class="header_nav_item">
-                    <a href="index.html" class="header_formatted">Запись</a>
+                    <a href="pages/make_an_appointment.html" class="header_formatted">Запись</a>
                 </li>
             </ul>
         </nav>
@@ -48,10 +51,10 @@
         <aside class="menu">
             <ul class="aside-menu-formatted">
                 <li>
-                    <a href="index.html" class="aside-menu-formatted">Истории болезни</a>
+                    <a href="pages/anamnez.html" class="aside-menu-formatted">Истории болезни</a>
                 </li>
                 <li>
-                    <a href="patient_list.html" class="aside-menu-formatted">Список пациентов</a>
+                    <a href="pages/patient_list.html" class="aside-menu-formatted">Список пациентов</a>
                 </li>
             </ul>
         </aside>
@@ -80,22 +83,13 @@
                     Для того чтобы не деражть всю информацию в голове, ведите краткие истории болезни для каждого пациента.
                     Здесь вы сами сможете добавлять нужные вам поля. <br>
                     </p>
+                    <button id='change-button' onclick=changeTextColor()>Поменять цвет текста на белый</button>
                 </section>
             </article>
-            <div class="box">
-                <div class="box-item">One</div>
-                <div class="box-item">Two</div>
-                <div class="box-item">Three</div>
-                <div class="box-item">Four</div>
-                <div class="box-item">Five</div>
-                <div class="box-item">Six</div>
-                <div class="box-item">Seven</div>
-                <div class="box-item">Eight</div>
-            </div>
         </div>
     </main>
     <footer class="bottom-page">
-        <ul>
+        <ul id="firstlink" onclick="addlink()">
             <li class="footer-item">
                 <span>Контактная информация: </span>
             </li>
@@ -112,5 +106,4 @@
     </footer>
 </div>
 </body>
-
 </html>

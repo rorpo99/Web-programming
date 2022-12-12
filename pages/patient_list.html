@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список пациентов</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/table_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="../scripts/change_text_color.js"></script>
+    <script src="../scripts/highlight_current_location.js"></script>
+</head>
+
+<body class="bodyContent">
+<div class="wrapper">
+    <header class="main-page">
+        <img id="img" src="../images/logo.png" alt="logotype" class="logo">
+        <div class="dropdown">
+            <button class="dropbtn">Меню</button>
+            <div class="dropdown-content">
+                <a href="../index.html" class="header_formatted">Главная</a>
+                <a href="schedule.html" class="header_formatted">Расписание</a>
+                <a href="make_an_appointment.html" class="header_formatted">Запись</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Пациенты</button>
+            <div class="dropdown-content">
+                <a href="anamnez.html" class="header_formatted">Истории болезни</a>
+                <a href="patient_list.html" class="header_formatted">Список пациентов</a>
+            </div>
+        </div>
+        <nav class="main-page">
+            <ul class="header-nav-main-page">
+                <li class="header_nav_item">
+                    <a href="../index.html" class="header_formatted">Главная</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="schedule.html" class="header_formatted">Расписание</a>
+                </li>
+                <li class="header_nav_item">
+                    <a href="make_an_appointment.html" class="header_formatted">Запись</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="menu">
+            <ul class="aside-menu-formatted">
+                <li>
+                    <a href="anamnez.html" class="aside-menu-formatted">Истории болезни</a>
+                </li>
+                <li>
+                    <a href="patient_list.html" class="aside-menu-formatted">Список пациентов</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <div class="container">
+                <table>
+                    <caption>Список пациентов</caption>
+                    <thead>
+                    <tr>
+                        <th>ФИО</th>
+                        <th>Адрес</th>
+                        <th>Номер телефона</th>
+                        <th>Дата последнего приёма</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td data-label="ФИО">Соколов Андрей Александрович</td>
+                        <td data-label="Адрес">ул. 1 Мая, д. 5б кв. 23</td>
+                        <td data-label="Номер телефона"> 89127650350</td>
+                        <td data-label="Дата последнего приёма">28.10.2022</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ФИО">Прохорова Галина Кирилловна</td>
+                        <td data-label="Адрес">ул. Королёва, д. 18, кв. 48</td>
+                        <td data-label="Номер телефона">89127656550</td>
+                        <td data-label="Дата последнего приёма">28.10.2022</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ФИО">Вольхина Мария Алесандровна</td>
+                        <td data-label="Адрес">ул. Луначарского, д. 25, кв. 24</td>
+                        <td data-label="Номер телефона">89125678426</td>
+                        <td data-label="Дата последнего приёма">26.10.2022</td>
+                    </tr>
+                    <tr>
+                        <td data-label="ФИО">Дубровина Екатерина Андреевна</td>
+                        <td data-label="Адрес">ул. Ясеневая, д. 15</td>
+                        <td data-label="Номер телефона">89127650350</td>
+                        <td data-label="Дата последнего приёма">24.10.2022</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="bottom-page">
+        <ul>
+            <li class="footer-item">
+                <span>Контактная информация: </span>
+            </li>
+            <li class="footer-item">
+                <a href="https://t.me/rorpo99" class="footer-formatted" target="_blank">Telegram</a>
+            </li>
+            <li class="footer-item">
+                <a href="https://vk.com/rorpo99" class="footer-formatted" target="_blank">ВКонтакте</a>
+            </li>
+            <li class="footer-item">
+                sonia.vyatkina2@yandex.ru
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

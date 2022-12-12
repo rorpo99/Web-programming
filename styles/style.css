@@ -14,6 +14,7 @@ main {
     word-spacing: 5px;
     font-weight: 400;
     margin-left: 210px;
+    text-align: left;
 }
 
 .wrapper {
@@ -32,6 +33,16 @@ a.header_formatted{
     box-shadow: 5px 5px 10px 1px rgba(0, 0, 255, .2);
 }
 
+.active-nav {
+    background-color: #BCC4E3;
+}
+
+a.active-aside {
+    border-left: 2px solid #35475B;
+    border-bottom: 2px solid #35475B;
+    #background-color: #BCC4E3;
+}
+
 a.footer-formatted {
     text-decoration: none;
     color: #EEF0EF;
@@ -44,7 +55,6 @@ a.aside-menu-formatted{
     line-height: 36px;
     font-size: medium;
     font-weight: 600;
-    font-style: italic;
 }
 
 a:hover {
@@ -53,7 +63,7 @@ a:hover {
 
 aside.menu {
     padding: 10px;
-    padding-left: 0px;
+    padding-left: 0;
     width: 174px;
     float: left;
     margin: 10px;
@@ -66,6 +76,22 @@ blockquote.right-sided {
     width: 300px;
     float: right;
     font-family: 'Jost', sans-serif;
+}
+
+#change-button {
+    background-color: #DDEBFB;
+    color: #35475B;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+#change-button:hover {
+    color: #FFFFFF;
+    background-color: #35475B;
 }
 
 footer.bottom-page {
@@ -116,28 +142,18 @@ nav.main-page {
 ul.aside-menu-formatted {
     list-style-type: none;
     padding: 10px;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #DDEBFB;
     border-radius: 10px;
 }
 
 ul.header-nav-main-page {
     margin: 30px 10px;
-    padding: 0px;
+    padding: 0;
 }
 
-/*remove after lab-3*/
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 200px;
-    align-content: space-around;
-    align-items: stretch;
-}
-
-.box-item {
-    margin: 20px 40px;
+.white-theme {
+    color: #ffffff;
 }
 
 .dropbtn {
