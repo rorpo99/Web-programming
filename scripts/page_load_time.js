@@ -6,5 +6,5 @@ window.onload = function () { // можно также использовать 
     mylink.setAttribute('class', "footer-item");
     text = document.createTextNode(`Page load time is ${elapsed} ms`);
     mylink.appendChild(text);
-    document.getElementById('firstlink').appendChild(mylink);
+    document.getElementById('footer_link_list').appendChild(mylink);
 };
