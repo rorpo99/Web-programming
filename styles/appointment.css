@@ -3,16 +3,28 @@
 }
 
 .slick-dots li button:before {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
-.slick-dots li.slick-active button:before {
-    opacity: 1;
+.main-content {
+    max-width: 70%;
+}
+
+.register-button {
+    background-color: #DDEBFB;
+    color: #35475B;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 50px;
     width: 300px;
-    font-size: .8rem;
 }
 
-.images img {
-    margin: 0;
-    border-radius: 20px;
+.register-button:hover {
+    color: #FFFFFF;
+    background-color: #35475B;
 }
