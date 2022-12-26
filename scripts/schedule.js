@@ -38,14 +38,18 @@ document.ready = function()  {
 
 $(function() {
     var list = document.querySelector("#result_todo_list");
-    console.log(list);
     list.addEventListener('click', function(ev) {
-        console.log(ev.target.tagName);
         if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('checked');
         }
     }, false);
 });
+
+// window.addEventListener("unload", function() {
+//     var list1 = document.querySelectorAll("#result_todo_list > li.checked");
+//     console.log(list1[0]);
+//     localStorage.setItem('list', JSON.stringify(list1[0]));
+// })
 
 
 

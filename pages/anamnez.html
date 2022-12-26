@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Дневник пациентов</title>
   <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../styles/anamnez.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
   <script src="../scripts/change_text_color.js"></script>
   <script src="../scripts/highlight_current_location.js"></script>
@@ -59,7 +60,17 @@
       </ul>
     </aside>
     <div class="main-content">
-
+        <div id="anamnez-list">
+          <template id="posts">
+            <div class="post-container">
+              <div id="user-and-title-container">
+                <span class="post-user">${item.id}</span>
+                <span class="post-title">${item.title}</span>
+              </div>
+              <p class="post-body">${item.body}</p>
+            </div>
+          </template>
+        </div>
     </div>
   </main>
   <footer class="bottom-page">
@@ -77,6 +88,7 @@
         sonia.vyatkina2@yandex.ru
       </li>
     </ul>
+    <script src="../scripts/anamnez.js"></script>
   </footer>
 </div>
 </body>

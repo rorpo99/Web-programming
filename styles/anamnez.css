@@ -1,0 +1,32 @@
+.preloader {
+    width: 300px;
+    height: 300px;
+}
+.post-user {
+    background-color: #35475B;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+.post-title {
+    background-color: #DDEBFB;
+    padding: 10px;
+}
+.post-body {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+.post-container {
+    margin-bottom: 40px;
+}
+
+#anamnez-list {
+    margin-top: 20px;
+}
+
+#user-and-title-container {
+    display: flex;
+}
