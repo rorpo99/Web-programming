@@ -21,7 +21,6 @@ const loadPosts = async () => {
 
     try {
         let left_boundary = Math.ceil(Math.random() * 100);
-        console.log(left_boundary)
         const data = (await getPosts()).slice(left_boundary, left_boundary + 10);
         container.innerHTML = '';
         for (const item of data) {
